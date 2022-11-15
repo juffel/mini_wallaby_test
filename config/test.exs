@@ -31,7 +31,8 @@ config :phoenix, :plug_init_mode, :runtime
 
 config :wallaby,
   otp_app: :mini_wallaby,
-  driver: Wallaby.Chrome # default
+  driver: Wallaby.Chrome, # default
+  screenshot_on_failure: true
 
 config :mini_wallaby, MiniWallabyWeb.Endpoint,
   server: true

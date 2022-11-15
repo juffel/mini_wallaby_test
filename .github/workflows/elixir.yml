@@ -108,5 +108,5 @@ jobs:
         if: failure()
         with:
           name: screenshots
-          path: /home/runner/work/dujudu/dujudu/screenshots/
+          path: /home/runner/work/mini_wallaby_test/mini_wallaby_test/screenshots/
 
