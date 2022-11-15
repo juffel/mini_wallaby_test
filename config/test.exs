@@ -28,3 +28,12 @@ config :logger, level: :warn
 
 # Initialize plugs at runtime for faster test compilation
 config :phoenix, :plug_init_mode, :runtime
+
+config :wallaby,
+  otp_app: :mini_wallaby,
+  driver: Wallaby.Chrome # default
+
+config :mini_wallaby, MiniWallabyWeb.Endpoint,
+  server: true
+
+config :mini_wallaby, :sandbox, Ecto.Adapters.SQL.Sandbox
